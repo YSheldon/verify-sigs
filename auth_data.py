@@ -380,8 +380,8 @@ class AuthData(object):
     if not self.has_countersignature: return
 
     unauth_attrs = self.signer_info['unauthenticatedAttributes']
-    if len(unauth_attrs) != 1:
-      raise Asn1Error('Expected one attribute, got %d.' % len(unauth_attrs))
+    #if len(unauth_attrs) != 1:
+      #raise Asn1Error('Expected one attribute, got %d.' % len(unauth_attrs))
     # Extra structure parsed in _ParseCountersig
 
     # signer_info of the counter signature
